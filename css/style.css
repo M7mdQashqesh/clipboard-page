@@ -1,0 +1,206 @@
+/* Global Variable */
+:root {
+  --primary-color: hsl(171, 66%, 44%);
+  --secondary-color: hsl(233, 100%, 69%);
+
+  --heading-color: hsl(210, 10%, 33%);
+  --paragraph-color: hsl(201, 11%, 66%);
+}
+/* Global Variable */
+
+/* Global Rule */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* Small Screen */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium screen */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Large Screen */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.main-title {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.main-title h2 {
+  color: var(--heading-color);
+}
+
+.main-title p {
+  color: var(--paragraph-color);
+  margin-top: 20px;
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 20px auto;
+}
+/* Global Rule */
+
+/* Start Landing */
+.header {
+  height: 100vh;
+  position: relative;
+  background-image: url(../images/bg-header-desktop.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.header .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+.header .container h1 {
+  color: var(--heading-color);
+  margin-top: 50px;
+}
+
+@media (max-width: 767px) {
+  .header .container h1 {
+    font-size: 32px;
+  }
+}
+
+.header .container p {
+  color: var(--paragraph-color);
+  margin-top: 20px;
+  line-height: 1.7;
+  max-width: 650px;
+  margin: 20px auto 50px;
+}
+
+.header .container .btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.header .container button {
+  padding: 15px 30px;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+}
+
+@media (max-width: 767px) {
+  .header .container button {
+    width: 100%;
+  }
+}
+.header .container button.download-ios {
+  background-color: var(--primary-color);
+  box-shadow: 0 0 5px var(--primary-color);
+}
+
+.header .container button.download-mac {
+  background-color: var(--secondary-color);
+  box-shadow: 0 0 5px var(--secondary-color);
+}
+/* End Landing */
+
+/* Start Track */
+.track {
+  padding: 50px 0;
+}
+
+.track .container .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.track .container .content .left-side {
+  position: relative;
+  left: -150px;
+}
+
+@media (max-width: 767px) {
+  .track .container .content .left-side {
+    left: 0;
+    margin-bottom: 50px;
+  }
+}
+
+.track .container .content .left-side img {
+  max-width: 100%;
+}
+.track .container .content .right-side {
+  flex: 1;
+}
+
+@media (max-width: 767px) {
+  .track .container .content .right-side {
+    text-align: center;
+  }
+}
+
+.track .container .content .right-side .row {
+  margin-bottom: 80px;
+}
+
+.track .container .content .right-side .row h3 {
+  color: var(--heading-color);
+}
+
+.track .container .content .right-side .row p {
+  line-height: 1.7;
+  color: var(--paragraph-color);
+  margin-top: 20px;
+}
+/* End Track */
+
+/* Start Access */
+.access {
+  padding: 100px 0;
+}
+
+.access .container img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+/* End Access */
